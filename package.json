@@ -1,0 +1,24 @@
+{
+  "name": "teste-ebac-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivaneidepmn/teste-ebac-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivaneidepmn/teste-ebac-ui/issues"
+  },
+  "homepage": "https://github.com/ivaneidepmn/teste-ebac-ui#readme",
+  "dependencies": {
+    "cypress": "^13.6.0"
+  }
+}
