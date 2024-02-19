@@ -1,11 +1,11 @@
 /// <reference types="cypress"/>
 
-describe('Funcionalidade:login', () => {
-    beforeEach(() =>{
-        cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/');
+describe('Funcionalidade:login', () => { //o teste que sera feito
+    beforeEach(() =>{ //Os BeforeEach evitar repetição de código nos testes
+        cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/');//o cy visit visita a url sera testada
     });
         afterEach(()=>{
-            cy.screenshot()
+            cy.screenshot() // capturar screenshots em cada etapa do teste dir
         });
 
     
@@ -15,7 +15,7 @@ describe('Funcionalidade:login', () => {
         cy.get('.woocommerce-form > .button').click()
 
         cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, ivapmn (não é ivapmn? Sair)')
-    })
+    });
 
     it('Deve exibir mensagem de erro ao inserir usuário inválido', () => {
         cy.get('#username').type('ivaneide@test.art.br')
@@ -27,7 +27,7 @@ describe('Funcionalidade:login', () => {
 
     });
 
-    it('Deve exibir mensagem de erro ao inserir senha inválida', () => {
+    it('Deve exibir mensagem de erro ao inserir senha inválida', () => {// o it.only ignora os demais trechos e só texto ele pode ser tirado logo após o texte
         cy.get('#username').type('ivapmn@test.art.br')
         cy.get('#password').type('235468')
         cy.get('.woocommerce-form > .button').click()
