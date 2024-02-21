@@ -18,10 +18,8 @@
     "url": "https://github.com/ivaneidepmn/teste-ebac-ui/issues"
   },
   "homepage": "https://github.com/ivaneidepmn/teste-ebac-ui#readme",
-  "dependencies": {
-    "cypress": "^13.6.0"
-  },
   "devDependencies": {
-    "chai": "^5.1.0"
+    "chai": "^5.1.0",
+    "cypress": "^13.6.0"
   }
 }
